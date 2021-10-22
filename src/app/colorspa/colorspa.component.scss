@@ -1,0 +1,58 @@
+
+.heading{
+// margin-top: 10vh;
+padding-top: 10vh;
+font-weight: bolder;
+font-size: larger;
+}
+
+.button{
+    color: white;
+    background-color: purple;
+}
+
+.hexbutton{
+    color: brown;
+    cursor: pointer;
+    border: white;
+    border-radius: 6px;
+}
+
+.innerdiv{
+    width: 15%;
+    height: 40vh;
+    display: inline-block;
+    justify-content: center;
+    border: 10px solid white;
+    border-radius: 15px;
+}
+
+.outerdiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7vh;
+   
+}
+
+.p{
+    margin-top: 50%;
+    color: white;
+    padding-top: 40%;
+
+}
+
+// .p2{
+
+// }
+
+textarea{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 0;
+    border: none;
+    height: 5vh;
+    outline: none;
+    caret-color: transparent;
+}

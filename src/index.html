@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ColorPalatte</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v2.0.8/dist/clipboard.min.js"></script>
+  <script src="https://rawcdn.githack.com/zenorocha/clipboard.js/v2.0.8/dist/clipboard.min.js"></script>
+  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="https://cdn.statically.io/gh/zenorocha/clipboard.js/v2.0.8/dist/clipboard.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body style="text-align: center;
+background-color: #d4cccc; margin: 0%; padding: 0%;"> 
+  <app-root></app-root>
+</body>
+</html>
+
+
+<!-- todaysDate: Date = new Date(); 
+ textMessage:any; 
+  msgHideAndShow:boolean=false;  
+  // constructor() {  
+
+  //   setInterval(() => {  
+  //     this.todaysDate = new Date();  
+  //   }, 1);  
+
+  // }  
+
+  // ngOnInit() {  
+  //   console.log(this.todaysDate);  
+  // }  
+
+
+  textMessageFunc( msgText: string) {
+    this.textMessage=msgText+" Copied to Clipboard";  
+    this.msgHideAndShow=true;  
+    setTimeout(() => {  
+      this.textMessage="";  
+      this.msgHideAndShow=false;  
+    }, 1000);  
+  }
+
+  copyCurrentTime(time: { select: () => void; setSelectionRange: (arg0: number, arg1: number) => void; }) {  
+    time.select();  
+    document.execCommand('copy');  
+    time.setSelectionRange(0, 0);  
+    this.textMessageFunc('Time');  
+  }  
+
+} -->
+
+
+
+<!-- <div class="outerdiv">
+  <div class="innerdiv" *ngFor="let color of colorData; let i=index" 
+              [ngStyle]="{'background-color': color?.hex_value}">  
+<textarea #time>{{todaysDate | date:'HH:mm:ss'}}</textarea> 
+        <p><button class="hexbutton" (click)="copyCurrentTime(time)" >{{color?.hex_value}}</button></p>
+                    <label *ngIf="msgHideAndShow" style="float: right;">{{textMessage}}</label> 
+        
+  </div>
+</div> -->

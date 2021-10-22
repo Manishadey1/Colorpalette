@@ -1,0 +1,60 @@
+
+ <div class="heading">Color palette generator</div>
+ <br>
+ <br>
+ 
+ <!-- Trigger
+<button class="btn" data-clipboard-text="js">
+  Copy to clipboard
+</button> -->
+
+ <!-- <textarea id='txt'>Yogesh singh</textarea> 
+<button class="btn" ngclipboard data-clipboard-target="#txt">Copy to clipboard </button>
+
+<br><br> 
+<textarea placeholder="Paste Text"></textarea> 
+
+<!-- Script --> 
+<!-- <script> 
+var myApp = angular.module('myapp', ['ngclipboard']); 
+</script> --> 
+
+
+ <!-- <div *ngFor="let user of users"> -->
+ <label *ngIf="display" style="text-align: center;">Hex value Copied to Clipboard</label> 
+<!-- </div> -->
+ <br>
+ <br>
+
+ <div class="outerdiv">
+    <div class="innerdiv" *ngFor="let color of colorData; let i=index" 
+                [ngStyle]="{'background-color': color?.hex_value}"> 
+                
+<textarea  #time style="display: block; " >{{color?.hex_value}}</textarea> 
+
+          <p class="p"><button class="hexbutton" (click)="copyCurrentTime(time)" (keydown)="keydown($event)" >Copy Hexvalue</button></p>
+                      <!-- <label *ngIf="msgHideAndShow" style="float: right;">{{textMessage}}</label>  -->
+                      <!-- <label *ngIf="display" style="float: right;"> Copied to Clipboard</label> -->
+                    </div>
+                    <!-- <label *ngIf="display" style="margin-top: 45"> Copied to Clipboard</label> -->
+
+ </div>
+
+ <br>
+ <br>
+
+ <button mat-button class="button" (click)="refresh()" (keypress)="onKeypress($event)" > Generate Color</button> 
+<br>
+<br>
+<p class="p2">Or just press the "Spacebar" to generate new color palettes</p >
+
+<!-- <textarea #time>{{todaysDate | date:'HH:mm:ss'}}</textarea> 
+                    <button type="button" style="margin-right:5px" (click)="copyCurrentTime(time)" 
+                      class="btn btn-success">Copy 
+                      Current Time</button> 
+                      <label *ngIf="msgHideAndShow" style="float: right;">{{textMessage}}</label>  -->
+
+                      <!-- <body ng-app="">
+                        <input ng-copy="copied=true">
+                      copieded: {{copied}}
+                      </body> -->
